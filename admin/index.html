@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EduLumina Admin</title>
+<title>ProggaAI Admin</title>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -333,7 +333,7 @@ label { display: block; font-size: 11px; font-weight: 600; color: var(--ink-3); 
 <!-- Sidebar -->
 <aside class="sidebar">
   <div class="sidebar-logo">
-    <div class="sidebar-logo-text"><span class="logo-dot"></span> EduLumina</div>
+    <div class="sidebar-logo-text"><span class="logo-dot"></span> ProggaAI</div>
     <div class="sidebar-sub">Admin Panel</div>
   </div>
 
@@ -426,8 +426,7 @@ label { display: block; font-size: 11px; font-weight: 600; color: var(--ink-3); 
             <option value="6">Class 6</option>
             <option value="7">Class 7</option>
             <option value="8">Class 8</option>
-            <option value="9">Class 9</option>
-            <option value="10">Class 10</option>
+            <option value="SSC">Class 9-10 (SSC)</option>
           </select>
         </div>
         <div class="field">
@@ -542,9 +541,10 @@ label { display: block; font-size: 11px; font-weight: 600; color: var(--ink-3); 
         <div>
           <label>Class</label>
           <select id="new-class">
-            <option value="6">6</option><option value="7">7</option>
-            <option value="8">8</option><option value="9">9</option>
-            <option value="10">10</option>
+            <option value="6">Class 6</option>
+            <option value="7">Class 7</option>
+            <option value="8">Class 8</option>
+            <option value="SSC">Class 9-10 (SSC)</option>
           </select>
         </div>
         <div>
@@ -610,9 +610,10 @@ label { display: block; font-size: 11px; font-weight: 600; color: var(--ink-3); 
         <div>
           <label>Class</label>
           <select id="bulk-class">
-            <option value="6">6</option><option value="7">7</option>
-            <option value="8">8</option><option value="9">9</option>
-            <option value="10">10</option>
+            <option value="6">Class 6</option>
+            <option value="7">Class 7</option>
+            <option value="8">Class 8</option>
+            <option value="SSC">Class 9-10 (SSC)</option>
           </select>
         </div>
         <div>
@@ -733,7 +734,7 @@ async function init() {
       const r = await fetch(API + '/api/auth/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email: 'admin@edulumina.com', password: 'admin123' })
+        body: JSON.stringify({ email: 'abdulaleemkhander@gmail.com', password: '#Aleem753' })
       });
       const d = await r.json();
       TOKEN = d.token;
